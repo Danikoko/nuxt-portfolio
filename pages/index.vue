@@ -78,48 +78,48 @@
                 <div class="cv__header">
                     <div class="in">
                         <div class="avatar">
-                            <img src="img/header/1.jpg" alt="">
+                            <img src="/img/header/1.jpg" alt="">
                         </div>
                         <h3><span>Daniel</span> Enamudu</h3>
                         <p class="quote">I'm a passionate front-end web developer who excels at creating pixel-perfect web interfaces. I’m available for a freelance job. <a href="#contact" class="anchor">Hire me</a></p>
                         <ul class="contact_info">
                             <li>
-                                <span class="icon"><img src="svg/location.svg" alt="" class="fn__svg"></span>
+                                <span class="icon"><i class="fa-duotone fa-location-dot fn__svg"></i><!--<img src="/svg/location.svg" alt="" class="fn__svg">--></span>
                                 <p>69 Queen St, Melbourne Australia</p>
                             </li>
                             <li>
-                                <span class="icon"><img src="svg/call.svg" alt="" class="fn__svg"></span>
+                                <span class="icon"><img src="/svg/call.svg" alt="" class="fn__svg"></span>
                                 <p>(+706) 898-0751</p>
                             </li>
                             <li>
-                                <span class="icon"><img src="svg/message.svg" alt="" class="fn__svg"></span>
+                                <span class="icon"><img src="/svg/message.svg" alt="" class="fn__svg"></span>
                                 <p>adam_milner@example.com</p>
                             </li>
                         </ul>
                         <ul class="social">
                             <li>
                                 <a href="#" target="_blank" title="twitter.com">
-                                    <img class="fn__svg" src="svg/twitter.svg" alt="twitter.com" />
+                                    <img class="fn__svg" src="/svg/twitter.svg" alt="twitter.com" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#" target="_blank" title="facebook.com">
-                                    <img class="fn__svg" src="svg/facebook-logo.svg" alt="facebook.com" />
+                                    <img class="fn__svg" src="/svg/facebook-logo.svg" alt="facebook.com" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#" target="_blank" title="instagram.com">
-                                    <img class="fn__svg" src="svg/instagram.svg" alt="instagram.com" />
+                                    <img class="fn__svg" src="/svg/instagram.svg" alt="instagram.com" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#" target="_blank" title="printerest.com">
-                                    <img class="fn__svg" src="svg/pinterest.svg" alt="printerest.com" />
+                                    <img class="fn__svg" src="/svg/pinterest.svg" alt="printerest.com" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#" target="_blank" title="youtube.com">
-                                    <img class="fn__svg" src="svg/youtube.svg" alt="youtube.com" />
+                                    <img class="fn__svg" src="/svg/youtube.svg" alt="youtube.com" />
                                 </a>
                             </li>
                         </ul>
@@ -134,8 +134,8 @@
                         <div class="content">
                             <div class="left_hero_header">
                                 <div class="circle">
-                                    <div class="bg_img" data-bg-img="img/header/1.jpg"></div>
-                                    <img src="img/thumb/square.jpg" alt="" />
+                                    <div class="bg_img" data-bg-img="/img/header/1.jpg"></div>
+                                    <img src="/img/thumb/square.jpg" alt="" />
                                     <div class="circle_holder_blue"><span></span></div>
                                     <div class="circle_holder_orange"><span></span></div>
                                     <div class="lines">
@@ -408,8 +408,8 @@
                                         <div class="inner">
                                             <div class="entry">
                                                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                                    <img src="img/thumb/42-56.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/1.jpg"></div>
+                                                    <img src="/img/thumb/42-56.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/1.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Mockup Shape</h3>
                                                         <span>Youtube</span>
@@ -422,8 +422,8 @@
                                         <div class="inner">
                                             <div class="entry">
                                                 <a class="popup-vimeo" href="https://vimeo.com/337293658">
-                                                    <img src="img/thumb/42-34.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/2.jpg"></div>
+                                                    <img src="/img/thumb/42-34.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/2.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Ave Bottle</h3>
                                                         <span>Vimeo</span>
@@ -436,8 +436,8 @@
                                         <div class="inner">
                                             <div class="entry">
                                                 <a class="soundcloude_link mfp-iframe audio" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                                                    <img src="img/thumb/42-56.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/3.jpg"></div>
+                                                    <img src="/img/thumb/42-56.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/3.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Magic Art</h3>
                                                         <span>Soundcloud</span>
@@ -449,9 +449,9 @@
                                     <li class="popup grid-item">
                                         <div class="inner">
                                             <div class="entry">
-                                                <a class="zoom" href="img/portfolio/5.jpg">
-                                                    <img src="img/thumb/42-56.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/5.jpg"></div>
+                                                <a class="zoom" href="/img/portfolio/5.jpg">
+                                                    <img src="/img/thumb/42-56.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/5.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Blue Lemon</h3>
                                                         <span>Popup</span>
@@ -463,9 +463,9 @@
                                     <li class="popup grid-item">
                                         <div class="inner">
                                             <div class="entry">
-                                                <a class="zoom" href="img/portfolio/4.jpg">
-                                                    <img src="img/thumb/42-34.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/4.jpg"></div>
+                                                <a class="zoom" href="/img/portfolio/4.jpg">
+                                                    <img src="/img/thumb/42-34.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/4.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Art Stone</h3>
                                                         <span>Popup</span>
@@ -477,9 +477,9 @@
                                     <li class="popup grid-item">
                                         <div class="inner">
                                             <div class="entry">
-                                                <a class="zoom" href="img/portfolio/6.jpg">
-                                                    <img src="img/thumb/42-34.jpg" alt="" />
-                                                    <div class="main" data-bg-img="img/portfolio/6.jpg"></div>
+                                                <a class="zoom" href="/img/portfolio/6.jpg">
+                                                    <img src="/img/thumb/42-34.jpg" alt="" />
+                                                    <div class="main" data-bg-img="/img/portfolio/6.jpg"></div>
                                                     <div class="mobile_title">
                                                         <h3>Global Evolution</h3>
                                                         <span>Popup</span>
@@ -514,15 +514,15 @@
                                         </div>
                                         <div class="item_right">
                                             <div class="t_ava">
-                                                <div class="ava_in" data-bg-img="img/testimonials/1.jpg"></div>
+                                                <div class="ava_in" data-bg-img="/img/testimonials/1.jpg"></div>
                                             </div>
                                             <div class="t_name">
                                                 <p>OldPhot</p>
                                             </div>
                                             <div class="t_rating" data-stars="5">
                                                 <div class="rating_in">
-                                                    <div class="rating_active"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
-                                                    <div class="rating_regular"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_active"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_regular"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -535,15 +535,15 @@
                                         </div>
                                         <div class="item_right">
                                             <div class="t_ava">
-                                                <div class="ava_in" data-bg-img="img/testimonials/2.jpg"></div>
+                                                <div class="ava_in" data-bg-img="/img/testimonials/2.jpg"></div>
                                             </div>
                                             <div class="t_name">
                                                 <p>Wuoh</p>
                                             </div>
                                             <div class="t_rating" data-stars="5">
                                                 <div class="rating_in">
-                                                    <div class="rating_active"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
-                                                    <div class="rating_regular"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_active"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_regular"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -556,15 +556,15 @@
                                         </div>
                                         <div class="item_right">
                                             <div class="t_ava">
-                                                <div class="ava_in" data-bg-img="img/testimonials/3.jpg"></div>
+                                                <div class="ava_in" data-bg-img="/img/testimonials/3.jpg"></div>
                                             </div>
                                             <div class="t_name">
                                                 <p>Bartolo</p>
                                             </div>
                                             <div class="t_rating" data-stars="5">
                                                 <div class="rating_in">
-                                                    <div class="rating_active"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
-                                                    <div class="rating_regular"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_active"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_regular"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -577,15 +577,15 @@
                                         </div>
                                         <div class="item_right">
                                             <div class="t_ava">
-                                                <div class="ava_in" data-bg-img="img/testimonials/4.jpg"></div>
+                                                <div class="ava_in" data-bg-img="/img/testimonials/4.jpg"></div>
                                             </div>
                                             <div class="t_name">
                                                 <p>Przemeknorek</p>
                                             </div>
                                             <div class="t_rating" data-stars="5">
                                                 <div class="rating_in">
-                                                    <div class="rating_active"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
-                                                    <div class="rating_regular"><img src="svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_active"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
+                                                    <div class="rating_regular"><img src="/svg/five-stars.svg" alt="" class="fn__svg"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -608,42 +608,42 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/1.png" alt="colorlib" />
+                                        <img src="/img/clients/1.png" alt="colorlib" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/2.png" alt="envato" />
+                                        <img src="/img/clients/2.png" alt="envato" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/3.png" alt="pingdom" />
+                                        <img src="/img/clients/3.png" alt="pingdom" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/4.png" alt="magento" />
+                                        <img src="/img/clients/4.png" alt="magento" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/5.png" alt="woocommerce" />
+                                        <img src="/img/clients/5.png" alt="woocommerce" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/6.png" alt="larevel" />
+                                        <img src="/img/clients/6.png" alt="larevel" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/7.png" alt="angular" />
+                                        <img src="/img/clients/7.png" alt="angular" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/clients/8.png" alt="google" /> 
+                                        <img src="/img/clients/8.png" alt="google" /> 
                                     </a>
                                 </li>
                             </ul>
@@ -669,9 +669,9 @@
                                             <div class="fn__hidden">
                                                 <p class="fn__cat">November 18, 2021</p>
                                                 <h3 class="fn__title">Emotional Slider Animation in After Effects</h3>
-                                                <div class="img_holder">
-                                                    <img src="img/thumb/square.jpg" alt="">
-                                                    <div class="abs_img" data-bg-img="img/blog/1.jpg"></div>
+                                                <div class="/img_holder">
+                                                    <img src="/img/thumb/square.jpg" alt="">
+                                                    <div class="abs_img" data-bg-img="/img/blog/1.jpg"></div>
                                                 </div>
                                                 <p class="fn__desc">Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci.</p>
                                                 <p class="fn__desc">Quisque dui metus, eleifend at enim ac, imperdiet sagittis dolor. Vestibulum ipsum quam, feugiat non velit sit amet, pulvinar varius nisl. Mauris tristique, ipsum sit amet lacinia congue, mauris magna tempus nibh, in mollis eros enim a tortor. Morbi enim arcu, tristique vitae mi nec, hendrerit pharetra metus. Phasellus id feugiat purus. In vel elit eu lacus ultrices feugiat. Etiam at aliquet mi. Nunc sit amet libero sit amet lectus pellentesque sagittis. Curabitur blandit ante quis erat dapibus viverra.</p>
@@ -679,7 +679,7 @@
                                             </div>
                                         </div>
                                         <div class="item_right">
-                                            <div class="abs_img" data-bg-img="img/blog/1.jpg"></div>
+                                            <div class="abs_img" data-bg-img="/img/blog/1.jpg"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -692,9 +692,9 @@
                                             <div class="fn__hidden">
                                                 <p class="fn__cat">September 15, 2021</p>
                                                 <h3 class="fn__title">Principle Tutorial &amp; Onboarding Flow Animation</h3>
-                                                <div class="img_holder">
-                                                    <img src="img/thumb/square.jpg" alt="">
-                                                    <div class="abs_img" data-bg-img="img/blog/2.jpg"></div>
+                                                <div class="/img_holder">
+                                                    <img src="/img/thumb/square.jpg" alt="">
+                                                    <div class="abs_img" data-bg-img="/img/blog/2.jpg"></div>
                                                 </div>
                                                 <p class="fn__desc">Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci.</p>
                                                 <p class="fn__desc">Quisque dui metus, eleifend at enim ac, imperdiet sagittis dolor. Vestibulum ipsum quam, feugiat non velit sit amet, pulvinar varius nisl. Mauris tristique, ipsum sit amet lacinia congue, mauris magna tempus nibh, in mollis eros enim a tortor. Morbi enim arcu, tristique vitae mi nec, hendrerit pharetra metus. Phasellus id feugiat purus. In vel elit eu lacus ultrices feugiat. Etiam at aliquet mi. Nunc sit amet libero sit amet lectus pellentesque sagittis. Curabitur blandit ante quis erat dapibus viverra.</p>
@@ -702,7 +702,7 @@
                                             </div>
                                         </div>
                                         <div class="item_right">
-                                            <div class="abs_img" data-bg-img="img/blog/2.jpg"></div>
+                                            <div class="abs_img" data-bg-img="/img/blog/2.jpg"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -715,9 +715,9 @@
                                             <div class="fn__hidden">
                                                 <p class="fn__cat">September 03, 2021</p>
                                                 <h3 class="fn__title">Ordering Ballooon Bouquets UI Design and Animation</h3>
-                                                <div class="img_holder">
-                                                    <img src="img/thumb/square.jpg" alt="">
-                                                    <div class="abs_img" data-bg-img="img/blog/3.jpg"></div>
+                                                <div class="/img_holder">
+                                                    <img src="/img/thumb/square.jpg" alt="">
+                                                    <div class="abs_img" data-bg-img="/img/blog/3.jpg"></div>
                                                 </div>
                                                 <p class="fn__desc">Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci.</p>
                                                 <p class="fn__desc">Quisque dui metus, eleifend at enim ac, imperdiet sagittis dolor. Vestibulum ipsum quam, feugiat non velit sit amet, pulvinar varius nisl. Mauris tristique, ipsum sit amet lacinia congue, mauris magna tempus nibh, in mollis eros enim a tortor. Morbi enim arcu, tristique vitae mi nec, hendrerit pharetra metus. Phasellus id feugiat purus. In vel elit eu lacus ultrices feugiat. Etiam at aliquet mi. Nunc sit amet libero sit amet lectus pellentesque sagittis. Curabitur blandit ante quis erat dapibus viverra.</p>
@@ -725,7 +725,7 @@
                                             </div>
                                         </div>
                                         <div class="item_right">
-                                            <div class="abs_img" data-bg-img="img/blog/3.jpg"></div>
+                                            <div class="abs_img" data-bg-img="/img/blog/3.jpg"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -738,9 +738,9 @@
                                             <div class="fn__hidden">
                                                 <p class="fn__cat">August 20, 2021</p>
                                                 <h3 class="fn__title">How to Prepare Your Design Portfolio</h3>
-                                                <div class="img_holder">
-                                                    <img src="img/thumb/square.jpg" alt="">
-                                                    <div class="abs_img" data-bg-img="img/blog/4.jpg"></div>
+                                                <div class="/img_holder">
+                                                    <img src="/img/thumb/square.jpg" alt="">
+                                                    <div class="abs_img" data-bg-img="/img/blog/4.jpg"></div>
                                                 </div>
                                                 <p class="fn__desc">Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci.</p>
                                                 <p class="fn__desc">Quisque dui metus, eleifend at enim ac, imperdiet sagittis dolor. Vestibulum ipsum quam, feugiat non velit sit amet, pulvinar varius nisl. Mauris tristique, ipsum sit amet lacinia congue, mauris magna tempus nibh, in mollis eros enim a tortor. Morbi enim arcu, tristique vitae mi nec, hendrerit pharetra metus. Phasellus id feugiat purus. In vel elit eu lacus ultrices feugiat. Etiam at aliquet mi. Nunc sit amet libero sit amet lectus pellentesque sagittis. Curabitur blandit ante quis erat dapibus viverra.</p>
@@ -748,7 +748,7 @@
                                             </div>
                                         </div>
                                         <div class="item_right">
-                                            <div class="abs_img" data-bg-img="img/blog/4.jpg"></div>
+                                            <div class="abs_img" data-bg-img="/img/blog/4.jpg"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -761,9 +761,9 @@
                                             <div class="fn__hidden">
                                                 <p class="fn__cat">July 11, 2021</p>
                                                 <h3 class="fn__title">Lottie Animation &amp; After Effects Tutorial</h3>
-                                                <div class="img_holder">
-                                                    <img src="img/thumb/square.jpg" alt="">
-                                                    <div class="abs_img" data-bg-img="img/blog/5.jpg"></div>
+                                                <div class="/img_holder">
+                                                    <img src="/img/thumb/square.jpg" alt="">
+                                                    <div class="abs_img" data-bg-img="/img/blog/5.jpg"></div>
                                                 </div>
                                                 <p class="fn__desc">Sed ornare tellus a odio bibendum, at tristique sapien malesuada. Proin sagittis maximus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida quam sit amet elit varius tempor. Pellentesque purus eros, blandit eu mollis vel, commodo eget orci.</p>
                                                 <p class="fn__desc">Quisque dui metus, eleifend at enim ac, imperdiet sagittis dolor. Vestibulum ipsum quam, feugiat non velit sit amet, pulvinar varius nisl. Mauris tristique, ipsum sit amet lacinia congue, mauris magna tempus nibh, in mollis eros enim a tortor. Morbi enim arcu, tristique vitae mi nec, hendrerit pharetra metus. Phasellus id feugiat purus. In vel elit eu lacus ultrices feugiat. Etiam at aliquet mi. Nunc sit amet libero sit amet lectus pellentesque sagittis. Curabitur blandit ante quis erat dapibus viverra.</p>
@@ -771,7 +771,7 @@
                                             </div>
                                         </div>
                                         <div class="item_right">
-                                            <div class="abs_img" data-bg-img="img/blog/5.jpg"></div>
+                                            <div class="abs_img" data-bg-img="/img/blog/5.jpg"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -851,7 +851,7 @@
 
 <script lang="ts">
 import useMainStore from '~~/store';
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
     setup() {
@@ -933,6 +933,14 @@ export default defineComponent({
                     href: 'css/style.css?ver=4'
                 },
                 /* Styles */
+
+                /* Font Awesome */
+                {
+                    type: 'text/css',
+                    rel: 'stylesheet',
+                    href: 'https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css'
+                }
+                /* Font Awesome */
             ],
             script: [
                 {
