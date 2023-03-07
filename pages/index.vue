@@ -75,56 +75,7 @@
                 <!-- /CV Background -->
     
                 <!-- CV Left Side -->
-                <div class="cv__header">
-                    <div class="in">
-                        <div class="avatar">
-                            <img src="/img/header/1.jpg" alt="">
-                        </div>
-                        <h3><span>Daniel</span> Enamudu</h3>
-                        <p class="quote">I'm a passionate front-end web developer who excels at creating pixel-perfect web interfaces. I’m available for a freelance job. <a href="#contact" class="anchor">Hire me</a></p>
-                        <ul class="contact_info">
-                            <li>
-                                <span class="icon"><i class="fa-duotone fa-location-dot fn__svg"></i><!--<img src="/svg/location.svg" alt="" class="fn__svg">--></span>
-                                <p>69 Queen St, Melbourne Australia</p>
-                            </li>
-                            <li>
-                                <span class="icon"><img src="/svg/call.svg" alt="" class="fn__svg"></span>
-                                <p>(+706) 898-0751</p>
-                            </li>
-                            <li>
-                                <span class="icon"><img src="/svg/message.svg" alt="" class="fn__svg"></span>
-                                <p>adam_milner@example.com</p>
-                            </li>
-                        </ul>
-                        <ul class="social">
-                            <li>
-                                <a href="#" target="_blank" title="twitter.com">
-                                    <img class="fn__svg" src="/svg/twitter.svg" alt="twitter.com" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" title="facebook.com">
-                                    <img class="fn__svg" src="/svg/facebook-logo.svg" alt="facebook.com" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" title="instagram.com">
-                                    <img class="fn__svg" src="/svg/instagram.svg" alt="instagram.com" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" title="printerest.com">
-                                    <img class="fn__svg" src="/svg/pinterest.svg" alt="printerest.com" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" title="youtube.com">
-                                    <img class="fn__svg" src="/svg/youtube.svg" alt="youtube.com" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <Header :profile="profile" />
                 <!-- /CV Left Side -->
     
                 <!-- /CV Content Side -->
@@ -855,20 +806,6 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     setup() {
-        const mainStore = useMainStore();
-        const { changeTheme } = mainStore;
-        const darkTheme = computed(() => mainStore.darkTheme);
-
-        const dateObject: Date = new Date();
-
-        watch(darkTheme, (newValue: boolean) => {
-            if (newValue === true) {
-                header.value.bodyAttrs.class = '';
-            } else {
-                header.value.bodyAttrs.class = 'light';
-            }
-        });
-
         const header = ref({
             htmlAttrs: {
                 lang: 'en'
@@ -891,7 +828,7 @@ export default defineComponent({
                 },
                 {
                     name: 'viewport',
-                    content: 'width=device-width, initial-scale=1'
+                    content: 'width=device-width, initial-scale=1, maximum-scale=1'
                 }
             ],
             title: 'Daniel Enamudu\'s Portfolio',
@@ -971,6 +908,23 @@ export default defineComponent({
         });
         useHead(header);
         
+        const mainStore = useMainStore();
+        const { 
+            profile,
+            changeTheme
+        } = mainStore;
+        const darkTheme = computed(() => mainStore.darkTheme);
+
+        const dateObject: Date = new Date();
+
+        watch(darkTheme, (newValue: boolean) => {
+            if (newValue === true) {
+                header.value.bodyAttrs.class = '';
+            } else {
+                header.value.bodyAttrs.class = 'light';
+            }
+        });
+        
         onMounted(() => {
             const currentHour = parseInt(dateObject.toLocaleTimeString().split(':')[0]);
             setTimeout(() => {
@@ -981,6 +935,10 @@ export default defineComponent({
                 }
             }, 100);
         });
+
+        return {
+            profile
+        }
     },
 })
 </script>
