@@ -17,15 +17,16 @@ declare global {
         to: number|'Today',
         school: string,
         degree: 'O-Level'|'Diploma'|'BSc'|'MSc'|'PhD',
-        course: string
+        course: string,
+        description: string
     }
     
     export interface Experience {
         from: number,
         to: number|'Today',
         company: string,
-        degree: 'O-Level'|'Diploma'|'BSc'|'MSc'|'PhD',
-        course: string
+        role: string,
+        description: string
     }
     
     export interface Tool {
@@ -41,8 +42,9 @@ declare global {
     export interface Project {
         image: string,
         name: string,
+        description: string,
         link: string,
-        type: 'Vue.js'|'Nuxt'|'React.js'|'Next.js'|'React Native'|'Laravel'[]
+        type: ('Vue.js'|'Nuxt.js'|'React.js'|'Next.js'|'React Native'|'Laravel')[]
     }
     
     export interface Reference {
@@ -56,7 +58,7 @@ declare global {
         dateAdded: Date,
         title: string,
         image: string,
-        htmlBody: string
+        link: string
     }
     
     export interface Profile {
@@ -67,6 +69,7 @@ declare global {
         phoneNumber: string,
         email: string,
         socialMedia: SocialMedia,
+        roles: string[],
         biography: string,
         dob: Date,
         languages: string[],
@@ -74,10 +77,7 @@ declare global {
         education: Education[],
         experiences: Experience[],
         tools: Tool[],
-        skillSet: {
-            summary: string,
-            list: Skill[]
-        },
+        skillSet: Skill[],
         projectsDone: Project[],
         reference: {
             summary: string,

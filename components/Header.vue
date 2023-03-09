@@ -65,11 +65,12 @@ export default defineComponent({
     },
     setup(props) {
         const { profile } = toRefs(props);
+        
         return {
             profile
         }
     }
-})
+});
 </script>
 
 <style lang="css" scoped>
