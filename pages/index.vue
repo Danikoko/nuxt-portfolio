@@ -104,7 +104,7 @@
                     <!-- /CV: Services Section -->
                     
                     <!-- CV: Portfolio Section-->
-                    <ProjectSection :projectsDone="profile.projectsDone" />
+                    <ProjectSection :projectsDone="profile.projectsDone" :darkTheme="darkTheme" />
                     <!-- /CV: Portfolio Section-->
     
                     <!-- CV: Testimonials -->
@@ -168,6 +168,12 @@ export default defineComponent({
             ],
             title: 'Daniel Enamudu\'s Portfolio',
             link: [
+                /* Favicon */
+                {
+                    rel: 'icon',
+                    href: 'favicon.png'
+                },
+                /* Favicon */
                 /* Google Fonts */
                 {
                     rel: 'preconnect',
@@ -271,7 +277,8 @@ export default defineComponent({
         });
 
         return {
-            profile
+            profile,
+            darkTheme
         }
     },
 })

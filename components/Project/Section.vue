@@ -28,6 +28,7 @@
                     v-for="(project, index) in projectsDone"
                     :key="index+1"
                     :project="project"
+                    :darkTheme="darkTheme"
                     :convertToSnakeCase="convertToSnakeCase" />
                 </ul>
             </div>
@@ -45,10 +46,14 @@ import type { PropType } from 'vue';
 export default defineComponent({
     name: 'ProjectSection',
     props: {
-        projectsDone: Object as PropType<Project[]>
+        projectsDone: Object as PropType<Project[]>,
+        darkTheme: Boolean,
     },
     setup(props) {
-        const { projectsDone } = toRefs(props);
+        const { 
+            projectsDone,
+            darkTheme
+        } = toRefs(props);
 
         const convertToSnakeCase: any = (stringToConvert: string) => stringToConvert.replace('.', '_');
 
@@ -67,7 +72,8 @@ export default defineComponent({
         return {
             projectsDone,
             projectTypes,
-            convertToSnakeCase
+            convertToSnakeCase,
+            darkTheme
         }
     },
 })

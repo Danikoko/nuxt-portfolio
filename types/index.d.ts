@@ -41,6 +41,7 @@ declare global {
     
     export interface Project {
         image: string,
+        darkThemeImage: string,
         name: string,
         description: string,
         link: string,

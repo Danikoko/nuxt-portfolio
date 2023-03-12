@@ -97,8 +97,9 @@ const useMainStore = defineStore('main', {
             ],
             projectsDone: [
                 {
-                    image: '/img/portfolio/5.jpg',
-                    link: 'https://danikoko.github.io/',
+                    image: '/img/portfolio/nuxt-portfolio.jpg',
+                    darkThemeImage: '/img/portfolio/nuxt-portfolio-dark.jpg',
+                    link: 'javascript:void(0);',
                     name: 'My Portfolio Site',
                     description: 'This is the site you\'re currently viewing.',
                     type: [
@@ -107,7 +108,8 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
+                    image: '/img/portfolio/eventdors.jpg',
+                    darkThemeImage: '/img/portfolio/eventdors.jpg',
                     link: 'https://eventdors.com/',
                     name: 'Eventdors',
                     description: 'A online application that eases the processes of event planning and vendor bookings.',
@@ -116,8 +118,9 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
-                    link: 'javascript:void(0);',
+                    image: '/img/portfolio/kylianerp.jpg',
+                    darkThemeImage: '/img/portfolio/kylianerp.jpg',
+                    link: 'https://kylianerp.com/',
                     name: 'KylianERP',
                     description: 'A HR solution for managing organizational processes.',
                     type: [
@@ -126,7 +129,8 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
+                    image: '/img/portfolio/kylianerp-jobs.jpg',
+                    darkThemeImage: '/img/portfolio/kylianerp-jobs.jpg',
                     link: 'https://jobs.kylianerp.com/',
                     name: 'KylianERP Jobs',
                     description: 'A job board system for staff vacancies, applications, and onboarding.',
@@ -136,7 +140,8 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
+                    image: '/img/portfolio/chops.jpg',
+                    darkThemeImage: '/img/portfolio/chops.jpg',
                     link: 'https://chops.ng/',
                     name: 'Chops',
                     description: 'A online application that caters for food ordering and delivery.',
@@ -147,8 +152,9 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
-                    link: 'https://play.google.com/store/apps/details?id=com.wbl_nigeria.leedder&hl=en&gl=US/',
+                    image: '/img/portfolio/leedder.jpg',
+                    darkThemeImage: '/img/portfolio/leedder.jpg',
+                    link: 'https://play.google.com/store/apps/details?id=com.wbl_nigeria.leedder&hl=en&gl=US',
                     name: 'Leedder',
                     description: 'A social media application for music listening and sharing. Available on Google Playstore & Apple Appstore.',
                     type: [
@@ -157,8 +163,9 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
-                    link: 'https://truelandlord/',
+                    image: '/img/portfolio/truelandlord.jpg',
+                    darkThemeImage: '/img/portfolio/truelandlord.jpg',
+                    link: 'https://truelandlord.com/',
                     name: 'Truelandlord',
                     description: 'A real estate web solution for simplifying the process of managing and renting properties.',
                     type: [
@@ -166,7 +173,8 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
+                    image: '/img/portfolio/hands-of-comfort.jpg',
+                    darkThemeImage: '/img/portfolio/hands-of-comfort.jpg',
                     link: 'https://handsofcomfort.ng/',
                     name: 'Hands of Comfort Foundation',
                     description: 'A web portal for a Non-Governmental Organization.',
@@ -175,8 +183,9 @@ const useMainStore = defineStore('main', {
                     ]
                 },
                 {
-                    image: '/img/portfolio/5.jpg',
-                    link: 'https://leadersbrokers.com',
+                    image: '/img/portfolio/leaders-insurance.jpg',
+                    darkThemeImage: '/img/portfolio/leaders-insurance.jpg',
+                    link: 'https://leadersbrokers.com/',
                     name: 'Leaders Insurance Brokers Limited',
                     description: 'A web portal for a professional insurance brokerage company.',
                     type: [
@@ -186,10 +195,10 @@ const useMainStore = defineStore('main', {
             ],
             articles: [
                 {
-                    title: 'How to pass props in Vue 3',
-                    dateAdded: new Date(),
-                    image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--I4FWon9Y--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ll22z8mea106b4vjdjy7.jpeg',
-                    link: 'https://res.cloudinary.com/practicaldev/image/fetch/s--I4FWon9Y--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ll22z8mea106b4vjdjy7.jpeg'
+                    title: 'Benefits of the Vue.js Composition API',
+                    dateAdded: new Date('Mar 11, 2023'),
+                    image: '/img/blog/1.jpg',
+                    link: 'https://danikoko.hashnode.dev/benefits-of-the-vuejs-composition-api'
                 }
             ]
         } as Profile
