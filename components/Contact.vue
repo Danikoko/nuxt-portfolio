@@ -32,14 +32,14 @@
                     </div>
                     <div class="item">
                         <div class="input_wrapper">
-                            <textarea v-model="formData.message" id="message" placeholder="Message"></textarea>
+                            <textarea v-model="formData.content" id="message" placeholder="Content *"></textarea>
                         </div>
                     </div>
                     <div class="item">
                         <a v-if="formData.sending" id="send_message" class="cursor-disabled">
                             Sending <i class="fa-duotone fa-spinner-third fa-spin"></i>
                         </a>
-                        <a v-else id="send_message" class="cursor-pointer">Send Message</a>
+                        <a v-else @click="sendContactMail()" id="send_message" class="cursor-pointer">Send Message</a>
                     </div>
                 </div>
             </div>
@@ -48,20 +48,75 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import useMainStore from '~~/store';
 
 export default defineComponent({
     setup() {
+        const mainStore = useMainStore();
+        const { 
+            API_URL
+        } = mainStore;
+
         const formData = ref({
             name: '' as string,
             email: '' as string,
             phone: '' as string,
-            message: '' as string,
+            content: '' as string,
             sending: false as boolean
         });
 
+        const sendContactMail = async () => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            });
+
+            formData.value.sending = true;
+
+            try {
+                const response = await axios.post(`${API_URL}/contact`, {
+                    name: formData.value.name,
+                    email: formData.value.email,
+                    phone: formData.value.phone,
+                    content: formData.value.content
+                });
+                formData.value.sending = false;
+                formData.value.name = '';
+                formData.value.email = '';
+                formData.value.phone = '';
+                formData.value.content = '';
+                Toast.fire({
+                    icon: 'success',
+                    title: response.data.message
+                });
+            } catch (error: any) {
+                formData.value.sending = false;
+                Toast.fire({
+                    icon: 'error',
+                    title: (
+                        error.response
+                        ?
+                        error.response.data.message
+                        :
+                        error.message
+                    )
+                });
+            }
+        }
+
         return {
-            formData
+            formData,
+            sendContactMail
         }
     },
 })

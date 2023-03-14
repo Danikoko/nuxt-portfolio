@@ -201,7 +201,8 @@ const useMainStore = defineStore('main', {
                     link: 'https://danikoko.hashnode.dev/benefits-of-the-vuejs-composition-api'
                 }
             ]
-        } as Profile
+        } as Profile,
+        API_URL: 'http://127.0.0.1:8000/api' /* https://danikoko.com/api */ as string
     }),
     actions: {
         changeTheme() {
