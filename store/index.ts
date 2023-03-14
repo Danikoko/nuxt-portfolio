@@ -202,7 +202,7 @@ const useMainStore = defineStore('main', {
                 }
             ]
         } as Profile,
-        API_URL: 'http://127.0.0.1:8000/api' /* https://danikoko.com/api */ as string
+        API_URL: 'https://danikoko.com/api' /* http://127.0.0.1:8000/api */ as string
     }),
     actions: {
         changeTheme() {

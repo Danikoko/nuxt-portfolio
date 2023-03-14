@@ -37,7 +37,7 @@
                     </div>
                     <div class="item">
                         <a v-if="formData.sending" id="send_message" class="cursor-disabled">
-                            Sending <i class="fa-duotone fa-spinner-third fa-spin"></i>
+                            Sending Message <i class="fa-duotone fa-spinner-third fa-spin"></i>
                         </a>
                         <a v-else @click="sendContactMail()" id="send_message" class="cursor-pointer">Send Message</a>
                     </div>
