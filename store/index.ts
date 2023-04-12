@@ -195,6 +195,12 @@ const useMainStore = defineStore('main', {
             ],
             articles: [
                 {
+                    title: 'Vue.js Tutorial - Basic Inventory - Basics of Vue 3, Axios & Pinia',
+                    dateAdded: new Date('Apr 9, 2023'),
+                    image: '/img/blog/2.jpg',
+                    link: 'https://danikoko.hashnode.dev/vuejs-tutorial-basic-inventory'
+                },
+                {
                     title: 'Benefits of the Vue.js Composition API',
                     dateAdded: new Date('Mar 11, 2023'),
                     image: '/img/blog/1.jpg',

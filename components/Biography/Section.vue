@@ -55,16 +55,16 @@ export default defineComponent({
             },
             {
                 item: 'Birthday',
-                value: `${birthday.value}`
+                value: `${birthday.value.split(',')[0]}`
             },
             {
                 item: 'Languages',
                 value: `${languagesSpoken.value}`
             },
-            {
-                item: 'Age',
-                value: `${age.value}`
-            },
+            // {
+            //     item: 'Age',
+            //     value: `${age.value}`
+            // },
             {
                 item: 'Nationality',
                 value: `${profile.value?.nationality}`
