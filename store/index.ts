@@ -110,7 +110,7 @@ const useMainStore = defineStore('main', {
                 {
                     image: '/img/portfolio/eventdors.jpg',
                     darkThemeImage: '/img/portfolio/eventdors.jpg',
-                    link: 'https://eventdors.com/',
+                    link: 'https://eventdors-frontend.vercel.app/',//'https://eventdors.com/',
                     name: 'Eventdors',
                     description: 'A online application that eases the processes of event planning and vendor bookings.',
                     type: [
