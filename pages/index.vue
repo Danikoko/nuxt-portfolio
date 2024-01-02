@@ -1,23 +1,23 @@
 <template>
     <div class="deebo_fn_main">
-        
-        <ThemeSwitcher />        
-        
+
+        <ThemeSwitcher />
+
         <!-- Overlay -->
         <div class="right_bar_overlay"></div>
         <!--/ Overlay -->
-    
+
         <!-- MODALBOX -->
         <div class="deebo_fn_modalbox">
             <a class="extra_closer" href="#"></a>
             <div class="box_inner">
                 <a class="closer" href="#"><span></span></a>
                 <div class="modal_content">
-    
+
                     <div class="modal_in">
                         <!-- Content comes from JS -->
                     </div>
-    
+
                     <div class="fn__nav" data-from="" data-index="">
                         <a href="#" class="prev">
                             <span class="text">Prev</span>
@@ -31,23 +31,23 @@
                 </div>
             </div>
         </div>
-        <!-- /MODALBOX --> 
-    
+        <!-- /MODALBOX -->
+
         <!-- Overlay -->
         <div class="right_bar_overlay"></div>
         <!--/ Overlay -->
-    
+
         <!-- MODALBOX -->
         <div class="deebo_fn_modalbox">
             <a class="extra_closer" href="#"></a>
             <div class="box_inner">
                 <a class="closer" href="#"><span></span></a>
                 <div class="modal_content">
-    
+
                     <div class="modal_in">
                         <!-- Content comes from JS -->
                     </div>
-    
+
                     <div class="fn__nav" data-from="" data-index="">
                         <a href="#" class="prev">
                             <span class="text">Prev</span>
@@ -61,77 +61,77 @@
                 </div>
             </div>
         </div>
-        <!-- /MODALBOX --> 
-    
+        <!-- /MODALBOX -->
+
         <!-- Modal CV Card -->
         <div class="deebo_fn_cv">
-    
+
             <!-- CV Inner -->
             <div class="deebo_fn__cv">
-    
+
                 <!-- CV Background -->
                 <div class="cv__bg"></div>
                 <div class="cv__bg2"></div>
                 <!-- /CV Background -->
-    
+
                 <!-- CV Left Side -->
                 <Header :profile="profile" />
                 <!-- /CV Left Side -->
-    
+
                 <!-- /CV Content Side -->
                 <div class="cv__content">
-                    
+
                     <HeroHeader :roles="profile.roles" />
-    
+
                     <!-- CV: Biography Section -->
                     <BiographySection :profile="profile" />
                     <!-- /CV: Biography Section -->
-    
+
                     <!-- CV: Education Section -->
                     <EducationSection :education="profile.education" />
                     <!-- /CV: Education Section -->
-    
+
                     <!-- CV: Experience Section -->
                     <ExperienceSection :experiences="profile.experiences" />
                     <!-- /CV: Experience Section -->
-    
+
                     <!-- CV: Skills Section -->
                     <SkillSection :skillSet="profile.skillSet" />
                     <!-- /CV: Skills Section -->
-    
+
                     <!-- CV: Services Section -->
                     <!-- <ServicesSection /> -->
                     <!-- /CV: Services Section -->
-                    
+
                     <!-- CV: Portfolio Section-->
                     <ProjectSection :projectsDone="profile.projectsDone" :darkTheme="darkTheme" />
                     <!-- /CV: Portfolio Section-->
-    
+
                     <!-- CV: Testimonials -->
                     <!-- <TestimonialSection /> -->
                     <!-- /CV: Testimonials -->
-                    
+
                     <!-- CV: Clients Section -->
                     <!-- <ClientSection /> -->
                     <!-- /CV: Clients Section -->
-                    
+
                     <!-- CV: News Section -->
                     <NewsSection :articles="profile.articles" />
                     <!-- CV: News Section -->
-                    
+
                     <Contact />
-    
-    
+
+
                 </div>
                 <!-- /CV Content Side -->
-    
+
             </div>
             <!-- CV Inner -->
         </div>
         <!-- /Modal CV Card -->
-    
-        
-    
+
+
+
     </div>
 </template>
 
@@ -156,6 +156,10 @@ export default defineComponent({
                 {
                     name: 'description',
                     content: 'Daniel Enamudu\'s Portfolio'
+                },
+                {
+                    name: 'keywords',
+                    content: 'Daniel, Enamudu, Front-end, Backend, Developer, Software, Portfolio, Danikoko'
                 },
                 {
                     name: 'author',
@@ -248,9 +252,9 @@ export default defineComponent({
             ]
         });
         useHead(header);
-        
+
         const mainStore = useMainStore();
-        const { 
+        const {
             profile,
             changeTheme
         } = mainStore;
@@ -265,7 +269,7 @@ export default defineComponent({
                 header.value.bodyAttrs.class = 'light';
             }
         });
-        
+
         onMounted(() => {
             const currentHour = parseInt(dateObject.toLocaleTimeString().split(':')[0]);
             setTimeout(() => {
